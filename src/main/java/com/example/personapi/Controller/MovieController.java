@@ -15,7 +15,7 @@ public class MovieController {
     @Autowired
     private PersonService service;
 
-    private static final int MAX_MOVIES = 5; // Define el número máximo de películas
+    private static final int MAX_MOVIES = 5;
 
     @GetMapping
     public List<Movie> getMovies(@PathVariable Long personId) {
@@ -29,15 +29,15 @@ public class MovieController {
         Person person = service.getPersonById(personId)
                 .orElseThrow(() -> new RuntimeException("Person not found"));
 
-        // Verificar si la persona ya tiene el número máximo de películas
+        // verifica si la persona ya tiene el número máximo de películas
         if (person.getFavouriteMovies().size() >= MAX_MOVIES) {
-            return ResponseEntity.status(400).build(); // Retorna un error si se supera el límite
+            return ResponseEntity.status(400).build();
         }
 
-        // Agregar la nueva película a la lista de películas favoritas
+        // agrega la nueva película a la lista de películas favoritas
         person.getFavouriteMovies().add(movie);
-        service.updatePerson(personId, person); // Actualiza la persona en el servicio
-        return ResponseEntity.status(201).build(); // Retorna un 201 Created
+        service.updatePerson(personId, person);
+        return ResponseEntity.status(201).build();
     }
 
     @DeleteMapping("/{movieTitle}")
@@ -45,9 +45,9 @@ public class MovieController {
         Person person = service.getPersonById(personId)
                 .orElseThrow(() -> new RuntimeException("Person not found"));
 
-        // Eliminar la película especificada de la lista
+        // elimina la película especificada
         person.getFavouriteMovies().removeIf(movie -> movie.getTitle().equals(movieTitle));
-        service.updatePerson(personId, person); // Actualiza la persona en el servicio
-        return ResponseEntity.noContent().build(); // Retorna un 204 No Content
+        service.updatePerson(personId, person); // actualiza la persona en el servicio
+        return ResponseEntity.noContent().build(); // retorna un 204 No Content
     }
 }

@@ -1,4 +1,4 @@
-package com.example.personapi.repository; // Asegúrate de que el paquete esté en minúsculas
+package com.example.personapi.repository;
 
 import com.example.personapi.model.Person;
 import org.springframework.stereotype.Repository;
