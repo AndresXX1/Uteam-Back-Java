@@ -1,24 +1,14 @@
 package com.example.personapi.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class Person {
     private Long id;
-
-    @JsonProperty("first-name")
     private String firstName;
-
-    @JsonProperty("last-name")
     private String lastName;
-
-    private Date birthdate;
-
-    @JsonProperty("has-insurance")
-    private boolean hasInsurance;
-
-    @JsonProperty("favourite-movies")
+    private LocalDateTime birthdate;
+    private Boolean hasInsurance;  // Asegúrate de incluir esta propiedad
     private List<Movie> favouriteMovies;
 
     // Getters y Setters
@@ -46,19 +36,19 @@ public class Person {
         this.lastName = lastName;
     }
 
-    public Date getBirthdate() {
+    public LocalDateTime getBirthdate() {
         return birthdate;
     }
 
-    public void setBirthdate(Date birthdate) {
+    public void setBirthdate(LocalDateTime birthdate) {
         this.birthdate = birthdate;
     }
 
-    public boolean isHasInsurance() {
+    public Boolean getHasInsurance() {
         return hasInsurance;
     }
 
-    public void setHasInsurance(boolean hasInsurance) {
+    public void setHasInsurance(Boolean hasInsurance) {
         this.hasInsurance = hasInsurance;
     }
 

@@ -32,7 +32,11 @@ public class PersonRepository {
     }
 
     public Person save(Person person) {
-        person.setId(currentId++);
+        if (person.getId() == null) {
+            person.setId(currentId++);
+        } else {
+            // Update existing person logic can be handled here if needed
+        }
         persons.add(person);
         return person;
     }
@@ -46,8 +50,9 @@ public class PersonRepository {
             person.setFirstName(updatedPerson.getFirstName());
             person.setLastName(updatedPerson.getLastName());
             person.setBirthdate(updatedPerson.getBirthdate());
-            person.setHasInsurance(updatedPerson.isHasInsurance());
+            person.setHasInsurance(updatedPerson.getHasInsurance()); // Cambia esto
             person.setFavouriteMovies(updatedPerson.getFavouriteMovies());
         });
+
     }
 }
