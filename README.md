@@ -81,8 +81,8 @@ POST /api/persons
 Body:
 ```
 {
-"firstName": "John",
-"lastName": "Doe",
+"first-mame": "John",
+"last-name": "Doe",
 "birthdate": "1990-01-01",
 "hasInsurance": true,
 "favouriteMovies": [
