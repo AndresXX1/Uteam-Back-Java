@@ -72,7 +72,7 @@ GET /api/persons/{id}
 
 * Buscar personas por nombre
 
-GET /api/persons/search?q={name}
+GET /api/persons/search?={name}
 
 * Crear una persona
 
