@@ -3,7 +3,7 @@
 * 💬 Página desarrollada con JavaScript y Vue, es una prueba técnica que cumple con las consignas y trabaja con la API de Marvel
 * 🛠️ Intuitiva y de fácil recorrido
 * 📁 Utiliza el método CRUD para (Create, Read, Update, Delete)
-* 🪟 Realizada con Node.js, Vue, Pinia, Axios, y estilada con CSS puro
+* 🪟 Realizada con java, Spring Boot, Maven y el SDK
 
  <img width="1459" alt="スクリーンショット 2023-11-20 2 23 51" src="https://github.com/AndresXX1/back-pf-hoteles/blob/main/images/0_S0rWo-lYM3IWsjbH.png"> 
 
