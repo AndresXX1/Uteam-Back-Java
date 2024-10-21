@@ -150,7 +150,7 @@ abre la terminal en el directorio raíz de tu proyecto (donde está el pom.xml)
 mvn clean install
 ```
 
-4. Inicia el proyecto
+4. ▶️ Inicia el proyecto
 
 ```
 mvn spring-boot:run
