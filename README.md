@@ -140,4 +140,18 @@ DELETE /api/persons/{personId}/movies/{movieTitle}
 
 2. ⬇️ Clona el repositorio
 
+```
+git clone https://github.com/AndresXX1/Uteam-Back-Java
+```
 3. 📦 Instala dependencias
+abre la terminal en el directorio raíz de tu proyecto (donde está el pom.xml) 
+
+```
+mvn clean install
+```
+
+4. Inicia el proyecto
+
+```
+mvn spring-boot:run
+```
