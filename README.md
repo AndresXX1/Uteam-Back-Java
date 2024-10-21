@@ -59,9 +59,9 @@ Consideraciones:
 
 - El resultado a enviar debe ser un zip, o subirlo a una cuenta pública de git que solo tenga el src, el archivo de la build tool y el archivo pom.xml de manera que para revisar, se pueda hacer la descarga de las dependencias y el run.
 
-## End Points
+# End Points
 
-Endpoints de Personas
+## Endpoints de Personas
 
 * Listar todas las personas
 
@@ -107,7 +107,7 @@ Body:
 
 DELETE /api/persons/{id}
 
-# Endpoints de Películas
+## Endpoints de Películas
 * Mostrar las películas de una persona
 
 GET /api/persons/{personId}/movies
