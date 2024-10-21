@@ -96,6 +96,8 @@ Body:
 * Modificar una persona
 
 PUT /api/persons/{id}
+
+
 Body:
 ```
 {
@@ -117,6 +119,7 @@ GET /api/persons/{personId}/movies
 POST /api/persons/{personId}/movies
 
 Body:
+
 ```bash
 {
 "title": "The Lord of the Rings",
