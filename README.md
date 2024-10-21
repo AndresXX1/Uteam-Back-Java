@@ -21,8 +21,8 @@ Corresponde a una persona con datos básicos y una coleccion de películas favor
 ```
 {
 "id":1,
-"firstName":"pablo",
-"lastName":"lamberti",
+"first-name":"pablo",
+"last-name":"lamberti",
 "birthdate":"1987-04-03",
 "hasInsurance":false,
 "favouriteMovies":[
